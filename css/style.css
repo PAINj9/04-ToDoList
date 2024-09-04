@@ -103,6 +103,8 @@ li button i {
 }
 
 /* Animación para eliminar tarea */
+/* Animación para eliminar tarea */
+
 li.salida {
     animation: desaparecer 0.3s forwards;
 }
