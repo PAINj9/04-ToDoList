@@ -1,0 +1,117 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-image: url('/images/gradient.png'); 
+    color: #333;
+}
+
+/* Encabezado */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0077cc;
+}
+
+/* Estilo para el input de texto */
+input[type="text"] {
+    width: 15%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #0077cc;
+    border-radius: 5px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 0 10px rgba(0, 119, 204, 0.5);
+}
+
+/* Estilo para el botón de agregar */
+button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+}
+
+/* Lista de tareas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo para cada tarea (li) */
+li {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: aparecer 0.3s forwards;
+}
+
+/* Animación de aparición */
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Botón eliminar dentro de cada tarea */
+li button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li button:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+li button i {
+    font-size: 1.2em;
+}
+
+/* Animación para eliminar tarea */
+li.salida {
+    animation: desaparecer 0.3s forwards;
+}
+
+@keyframes desaparecer {
+    to {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+
+
