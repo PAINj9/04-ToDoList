@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', Helvetica, sans-serif;
     text-align: center;
     margin: 20px;
-    background-image: url('/images/gradient.png'); 
+    background-image: url('/04-ToDoList/images/gradient.png');
     color: #333;
 }
 
